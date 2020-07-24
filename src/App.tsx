@@ -25,7 +25,7 @@ function App() {
   let [showResult, setShowResult] = useState(false);
   useEffect(() => {
     async function getAllData() {
-      let result: MyQuestion[] = await getAllQuizQuestion(5, 'easy',18);
+      let result: MyQuestion[] = await getAllQuizQuestion(10, 'easy',18);
       setQuiz(result);
       console.log(result);
     }
